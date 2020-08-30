@@ -7,17 +7,21 @@ window.addEventListener("contextmenu", function(e){
 });
 
 window.addEventListener("click", function(e){
+	mouseEvent = e;
 	var style = cntx.style;
 	var rect = cntx.getBoundingClientRect();
 	var top = rect.top;
 	var height = rect.height;
 	var left = rect.left;
 	var width = rect.width;
-	if(e.offsetY < top){
+	if(!cntx.classList.contains("active")){
+		return false;
+	}
+	if(e.y < top){
 		cntx.classList.remove("active");
-		return;
-	} else if(e.offsetY > top+height){
+	} else if(e.y > top+height){
 		cntx.classList.remove("active");
-		return;
+	} else if (e.x < left){
+		cntx.classList.remove("active");
 	}
 });
