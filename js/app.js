@@ -17,7 +17,7 @@ window.addEventListener("click", function(e){
 		cntx.classList.remove("active");
 		return;
 	} else if(e.offsetY > top+height){
-		cntx.remove("active");
+		cntx.classList.remove("active");
 		return;
 	}
 });
