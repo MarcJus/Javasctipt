@@ -1,0 +1,47 @@
+body
+{
+	background-color: black;
+	color: white;
+}
+
+.texts .visible
+{
+	background-color: blue;
+}
+
+.buttons
+{
+	margin: 0 auto;
+	width: 300px;
+	display: flex;
+}
+
+.buttons button
+{
+	border: none;
+	color: white;
+	margin-left: 5px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 120px;
+	outline: none;
+	cursor: pointer;
+}
+
+.green
+{
+	background-color: #4CAF50;
+}
+
+.blue
+{
+	background-color: #008CBA;
+}
+
+.red
+{
+	background-color: #f44336;
+}
